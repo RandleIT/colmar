@@ -1,0 +1,72 @@
+/* global settings */
+html {
+  font-size: 16px;
+}
+
+div, nav {
+  border: 1px solid blue;
+}
+
+.container {
+  width: 100%;
+}
+
+/* header section */
+.container.headline {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  background-color: white;
+}
+
+.headleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.headleft img {
+  height: 2rem;
+  width: auto;
+}
+
+.boldtext {
+  font-weight: bold;
+  color: black;
+}
+
+.greytext {
+  color: gray;
+}
+
+.headright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+  padding-right: 24px;
+}
+
+.headright span {
+  border-right: 1rem solid lightblue;
+}
+
+.headright span:last-child {
+  border-right: none;
+}
+
+/* banner section */
+
+
+/* about us section */
+
+
+/* courses section */
+
+
+/* thesis section */
+
+
+/* footer section */
