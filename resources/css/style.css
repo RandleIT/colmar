@@ -1,14 +1,49 @@
 /* global settings */
 html {
+  font-family: "helvetica", serif;
   font-size: 16px;
 }
 
-div, nav {
+/* div, nav {
   border: 1px solid blue;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+header, #banner, #aboutus, #courses, #thesis, footer {
+  width: 100%;
 }
 
 .container {
-  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
 }
 
 /* header section */
@@ -24,7 +59,7 @@ div, nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 24px;
+  padding-left: 1.5rem;
 }
 
 .headleft img {
@@ -45,28 +80,216 @@ div, nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 4rem;
-  padding-right: 24px;
+  padding-right: 1.5rem;
 }
 
-.headright span {
-  border-right: 1rem solid lightblue;
-}
-
-.headright span:last-child {
-  border-right: none;
+.headright a {
+  padding-left: 1rem;
 }
 
 /* banner section */
+#banner {
+  background-color: skyblue;
+}
 
+.banimage {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  margin: 2rem 1.5rem;
+}
+
+.banright {
+  width: 30%;
+}
+
+.banright h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkgray;
+}
+
+.banright h4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.banright .startbutton {
+  background-color: gray;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
 
 /* about us section */
+#aboutus {
+  background-color: white;
+}
 
+#aboutus .contleft {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.contleft h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#aboutus .contright {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+#aboutus .contright div:last-child {
+  background-color: gray;
+}
+
+#aboutus .contcont {
+  display: flex;
+  align-items: center;
+}
+
+#aboutus .contrightimg {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+#aboutus .contcont p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 /* courses section */
+#courses {
+  background-color: lightblue;
+  padding-bottom: 2rem;
+}
 
+#courses h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+#courses .container {
+  display: flex;
+  margin: 2rem 4rem;
+  align-items: stretch;
+}
+
+#courses .coursebox {
+  flex: 1;
+  background-color: white;
+}
+
+#courses .coursebox.center {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#courses .coursetext {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+#courses .coursetext h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 /* thesis section */
+#thesis {
+  background-color: white;
+}
 
+#thesis .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#thesis h2 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+#thesis .contleft {
+  width: 60%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+#thesis .contleft h4 {
+  margin-top: 1.5rem;
+}
+
+#thesis .contleft p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#thesis .contright {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+#thesis .contright div:first-child {
+  background-color: gray;
+  margin-top: 1.5rem;
+}
+
+#thesis .contcont {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+
+#thesis .contrightimg {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+#thesis .contrighttext {
+  width: 65%;
+  height: auto;
+}
+
+#thesis .contcont p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 /* footer section */
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: flex-start;;
+  background-color: lightblue;
+}
+
+.footleft {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.footright {
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+}
+
+.footright a {
+  padding-left: 1rem;
+}
