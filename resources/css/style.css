@@ -1,6 +1,6 @@
 /* global settings */
 html {
-  font-family: "helvetica", serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -26,12 +26,33 @@ header, #banner, #aboutus, #courses, #thesis, footer {
   align-items: center;
 }
 
+p {
+  line-height: 1.4;
+}
+
+a {
+  color: #F5F8FC;
+  text-decoration: none;
+  text-shadow: 2px 2px 10px #E8850C;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-family: "Open Sans", serif;
+}
+
 h1 {
+  font-weight: 700;
   font-size: 2.25rem;
 }
 
 h2 {
   font-size: 2rem;
+  color: #036;
+  text-shadow: 2px 2px 10px #E8850C;
 }
 
 h3 {
@@ -43,7 +64,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 /* header section */
@@ -52,7 +73,7 @@ h5 {
   justify-content: space-between;
   height: 4rem;
   align-items: center;
-  background-color: white;
+  background-color: #036;
 }
 
 .headleft {
@@ -65,15 +86,19 @@ h5 {
 .headleft img {
   height: 2rem;
   width: auto;
+  background-color: #F5F8FC;
 }
 
-.boldtext {
+.colmartext {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: black;
+  color: #E8850C;
+  margin-left: 0.5rem;
 }
 
-.greytext {
-  color: gray;
+.academytext {
+  font-size: 1.5rem;
+  color: #FFF10D;
 }
 
 .headright {
@@ -89,7 +114,7 @@ h5 {
 
 /* banner section */
 #banner {
-  background-color: skyblue;
+  background-color: #a1c5e5;
 }
 
 .banimage {
@@ -99,14 +124,12 @@ h5 {
   margin: 2rem 1.5rem;
 }
 
-.banright {
-  width: 30%;
+.lastline {
+  padding-top: 2rem;
 }
 
-.banright h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: darkgray;
+.banright {
+  width: 30%;
 }
 
 .banright h4 {
@@ -114,19 +137,20 @@ h5 {
   padding-bottom: 1.5rem;
 }
 
-.banright .startbutton {
-  background-color: gray;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  width: 100%;
-  color: white;
+.banright a.startbutton {
+  display: block;
+  background-color: #036;
+  padding: 0.5rem 4rem;
+  font-size: 1.5rem;
+  color: #E8850C;
+  text-shadow: 1px 1px black, 2px 2px 10px #FFF10D;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 /* about us section */
 #aboutus {
-  background-color: white;
+  background-color: #F5F8FC;
 }
 
 #aboutus .contleft {
@@ -135,7 +159,7 @@ h5 {
   margin: 2rem 1.5rem;
 }
 
-.contleft h2 {
+#aboutus .contleft h2 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -148,8 +172,8 @@ h5 {
   margin: 2rem 1.5rem;
 }
 
-#aboutus .contright div:last-child {
-  background-color: gray;
+#aboutus .contright .contcont:last-child {
+  background-color: #A1C5E5;
 }
 
 #aboutus .contcont {
@@ -163,6 +187,10 @@ h5 {
   margin: 1rem;
 }
 
+#aboutus .contright a {
+  color: #036;
+}
+
 #aboutus .contcont p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -170,7 +198,7 @@ h5 {
 
 /* courses section */
 #courses {
-  background-color: lightblue;
+  background-color: #a1c5e5;
   padding-bottom: 2rem;
 }
 
@@ -188,6 +216,7 @@ h5 {
 #courses .coursebox {
   flex: 1;
   background-color: white;
+  box-shadow: 1px 2px #036, 2px 4px #F5F8FC, 3px 6px #036, 4px 8px #F5F8FC, 5px 10px #036, 6px 12px #E8850C;
 }
 
 #courses .coursebox.center {
@@ -208,7 +237,7 @@ h5 {
 
 /* thesis section */
 #thesis {
-  background-color: white;
+  background-color: #F5F8FC;
 }
 
 #thesis .container {
@@ -245,7 +274,7 @@ h5 {
 }
 
 #thesis .contright div:first-child {
-  background-color: gray;
+  background-color: #A1C5E5;
   margin-top: 1.5rem;
 }
 
@@ -277,10 +306,11 @@ footer .container {
   justify-content: space-between;
   height: 4rem;
   align-items: flex-start;;
-  background-color: lightblue;
+  background-color: #036;
 }
 
 .footleft {
+  color: #F5F8FC;
   padding-left: 1.5rem;
   padding-top: 1rem;
 }
